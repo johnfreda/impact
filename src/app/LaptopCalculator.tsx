@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Search, X, Info, ArrowUpDown, BarChart as BarChartIcon, PlusCircle } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Search, X, Info, PlusCircle } from 'lucide-react';
 
 interface Laptop {
   id: string;
@@ -80,7 +79,7 @@ export default function LaptopCalculator() {
     const refurbishedLaptops = selectedLaptops.filter(laptop => laptop.isRefurbished);
     
     let totalSavings = 0;
-    let comparisonPairs = [];
+    let comparisonPairs: { new: Laptop; refurbished: Laptop; saving: number; }[] = [];
 
     newLaptops.forEach(newLaptop => {
       const refurbishedMatch = refurbishedLaptops.find(
@@ -100,12 +99,6 @@ export default function LaptopCalculator() {
   const totalCO2 = selectedLaptops.reduce((sum, laptop) => sum + laptop.co2, 0);
   const flightsEquivalent = (totalCO2 / 90).toFixed(2); // 90 kg CO2 per retourvlucht Amsterdam-Parijs
   const savingsFlightsEquivalent = (totalSavings / 90).toFixed(2);
-
-  const chartData = selectedLaptops.map(laptop => ({
-    ...laptop,
-    newCO2: laptop.isRefurbished ? 0 : laptop.co2,
-    refurbishedCO2: laptop.isRefurbished ? laptop.co2 : 0
-  }));
 
   return (
     <div className="bg-gray-100 p-6 min-h-screen">
@@ -218,40 +211,6 @@ export default function LaptopCalculator() {
                 </div>
               </div>
             )}
-          </div>
-        )}
-
-        {selectedLaptops.length > 1 && (
-          <div className="bg-white p-6 rounded-lg shadow mb-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-              <BarChartIcon className="mr-2" /> Vergelijking CO2 Impact
-            </h2>
-            <ResponsiveContainer width="100%" height={400}>
-              <BarChart data={chartData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="model" />
-                <YAxis />
-                <Tooltip 
-                  content={({ active, payload }) => {
-                    if (active && payload && payload.length) {
-                      const data = payload[0].payload;
-                      return (
-                        <div className="bg-white p-2 border border-gray-300 rounded shadow">
-                          <p className="font-semibold">{data.manufacturer} {data.model}</p>
-                          <p>Jaar: {data.year}</p>
-                          <p>CO2: {data.co2} kg CO2 eq</p>
-                          <p>{data.isRefurbished ? 'Refurbished' : 'Nieuw'}</p>
-                        </div>
-                      );
-                    }
-                    return null;
-                  }}
-                />
-                <Legend />
-                <Bar dataKey="newCO2" name="Nieuw" fill="#3B82F6" />
-                <Bar dataKey="refurbishedCO2" name="Refurbished" fill="#10B981" />
-              </BarChart>
-            </ResponsiveContainer>
           </div>
         )}
 
