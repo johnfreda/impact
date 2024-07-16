@@ -18,5 +18,25 @@
     { "id": "17", "model": "HP Pavilion 15", "co2": 320.00, "year": 2020, "manufacturer": "HP", "isRefurbished": false },
     { "id": "18", "model": "HP Pavilion 15", "co2": 112.00, "year": 2020, "manufacturer": "HP", "isRefurbished": true },
     { "id": "19", "model": "HP EliteBook 840 G7", "co2": 300.00, "year": 2020, "manufacturer": "HP", "isRefurbished": false },
-    { "id": "20", "model": "HP EliteBook 840 G7", "co2": 105.00, "year": 2020, "manufacturer": "HP", "isRefurbished": true }
-  ]
+    { "id": "20", "model": "HP EliteBook 840 G7", "co2": 105.00, "year": 2020, "manufacturer": "HP", "isRefurbished": true },
+    { "id": "21", "model": "Dell XPS 13 (9310)", "co2": 296.00, "year": 2021, "manufacturer": "Dell", "isRefurbished": false },
+    { "id": "22", "model": "Dell XPS 13 (9310)", "co2": 103.60, "year": 2021, "manufacturer": "Dell", "isRefurbished": true },
+    { "id": "23", "model": "Dell Latitude 7420", "co2": 350.00, "year": 2021, "manufacturer": "Dell", "isRefurbished": false },
+    { "id": "24", "model": "Dell Latitude 7420", "co2": 122.50, "year": 2021, "manufacturer": "Dell", "isRefurbished": true },
+    { "id": "25", "model": "Dell Precision 5550", "co2": 380.00, "year": 2020, "manufacturer": "Dell", "isRefurbished": false },
+    { "id": "26", "model": "Dell Precision 5550", "co2": 133.00, "year": 2020, "manufacturer": "Dell", "isRefurbished": true },
+    { "id": "27", "model": "Lenovo ThinkPad X1 Carbon Gen 9", "co2": 351.00, "year": 2021, "manufacturer": "Lenovo", "isRefurbished": false },
+    { "id": "28", "model": "Lenovo ThinkPad X1 Carbon Gen 9", "co2": 122.85, "year": 2021, "manufacturer": "Lenovo", "isRefurbished": true },
+    { "id": "29", "model": "Lenovo ThinkPad T14s", "co2": 330.00, "year": 2020, "manufacturer": "Lenovo", "isRefurbished": false },
+    { "id": "30", "model": "Lenovo ThinkPad T14s", "co2": 115.50, "year": 2020, "manufacturer": "Lenovo", "isRefurbished": true },
+    { "id": "31", "model": "Lenovo ThinkPad P1 Gen 4", "co2": 400.00, "year": 2021, "manufacturer": "Lenovo", "isRefurbished": false },
+    { "id": "32", "model": "Lenovo ThinkPad P1 Gen 4", "co2": 140.00, "year": 2021, "manufacturer": "Lenovo", "isRefurbished": true },
+    { "id": "33", "model": "Microsoft Surface Laptop 4", "co2": 287.00, "year": 2021, "manufacturer": "Microsoft", "isRefurbished": false },
+    { "id": "34", "model": "Microsoft Surface Laptop 4", "co2": 100.45, "year": 2021, "manufacturer": "Microsoft", "isRefurbished": true },
+    { "id": "35", "model": "Microsoft Surface Book 3", "co2": 349.00, "year": 2020, "manufacturer": "Microsoft", "isRefurbished": false },
+    { "id": "36", "model": "Microsoft Surface Book 3", "co2": 122.15, "year": 2020, "manufacturer": "Microsoft", "isRefurbished": true },
+    { "id": "37", "model": "ASUS ExpertBook B9450", "co2": 295.00, "year": 2020, "manufacturer": "ASUS", "isRefurbished": false },
+    { "id": "38", "model": "ASUS ExpertBook B9450", "co2": 103.25, "year": 2020, "manufacturer": "ASUS", "isRefurbished": true },
+    { "id": "39", "model": "ASUS ProArt StudioBook Pro 17", "co2": 420.00, "year": 2021, "manufacturer": "ASUS", "isRefurbished": false },
+    { "id": "40", "model": "ASUS ProArt StudioBook Pro 17", "co2": 147.00, "year": 2021, "manufacturer": "ASUS", "isRefurbished": true }
+]
