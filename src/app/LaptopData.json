@@ -1,0 +1,22 @@
+[
+    { "id": "1", "model": "MacBook Air (M1, 2020)", "co2": 160.00, "year": 2020, "manufacturer": "Apple", "isRefurbished": false },
+    { "id": "2", "model": "MacBook Air (M1, 2020)", "co2": 56.00, "year": 2020, "manufacturer": "Apple", "isRefurbished": true },
+    { "id": "3", "model": "MacBook Pro 13\" (M1, 2020)", "co2": 185.00, "year": 2020, "manufacturer": "Apple", "isRefurbished": false },
+    { "id": "4", "model": "MacBook Pro 13\" (M1, 2020)", "co2": 64.75, "year": 2020, "manufacturer": "Apple", "isRefurbished": true },
+    { "id": "5", "model": "MacBook Air (M2, 2022)", "co2": 152.00, "year": 2022, "manufacturer": "Apple", "isRefurbished": false },
+    { "id": "6", "model": "MacBook Air (M2, 2022)", "co2": 53.20, "year": 2022, "manufacturer": "Apple", "isRefurbished": true },
+    { "id": "7", "model": "MacBook Pro 14\" (M1 Pro, 2021)", "co2": 220.00, "year": 2021, "manufacturer": "Apple", "isRefurbished": false },
+    { "id": "8", "model": "MacBook Pro 14\" (M1 Pro, 2021)", "co2": 77.00, "year": 2021, "manufacturer": "Apple", "isRefurbished": true },
+    { "id": "9", "model": "MacBook Pro 16\" (M1 Max, 2021)", "co2": 270.00, "year": 2021, "manufacturer": "Apple", "isRefurbished": false },
+    { "id": "10", "model": "MacBook Pro 16\" (M1 Max, 2021)", "co2": 94.50, "year": 2021, "manufacturer": "Apple", "isRefurbished": true },
+    { "id": "11", "model": "HP Spectre x360 13", "co2": 290.00, "year": 2020, "manufacturer": "HP", "isRefurbished": false },
+    { "id": "12", "model": "HP Spectre x360 13", "co2": 101.50, "year": 2020, "manufacturer": "HP", "isRefurbished": true },
+    { "id": "13", "model": "HP Elite Dragonfly", "co2": 310.00, "year": 2021, "manufacturer": "HP", "isRefurbished": false },
+    { "id": "14", "model": "HP Elite Dragonfly", "co2": 108.50, "year": 2021, "manufacturer": "HP", "isRefurbished": true },
+    { "id": "15", "model": "HP Envy 13", "co2": 280.00, "year": 2021, "manufacturer": "HP", "isRefurbished": false },
+    { "id": "16", "model": "HP Envy 13", "co2": 98.00, "year": 2021, "manufacturer": "HP", "isRefurbished": true },
+    { "id": "17", "model": "HP Pavilion 15", "co2": 320.00, "year": 2020, "manufacturer": "HP", "isRefurbished": false },
+    { "id": "18", "model": "HP Pavilion 15", "co2": 112.00, "year": 2020, "manufacturer": "HP", "isRefurbished": true },
+    { "id": "19", "model": "HP EliteBook 840 G7", "co2": 300.00, "year": 2020, "manufacturer": "HP", "isRefurbished": false },
+    { "id": "20", "model": "HP EliteBook 840 G7", "co2": 105.00, "year": 2020, "manufacturer": "HP", "isRefurbished": true }
+  ]

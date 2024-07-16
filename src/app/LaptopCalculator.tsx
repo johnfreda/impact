@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Search, X, Info, PlusCircle } from 'lucide-react';
+import laptopData from './laptopData.json';
 
 interface Laptop {
   id: string;
@@ -11,20 +12,6 @@ interface Laptop {
   manufacturer: string;
   isRefurbished: boolean;
 }
-
-const laptopData: Laptop[] = [
-  { id: "1", model: "ThinkPad E460", co2: 340.00, year: 2015, manufacturer: "Lenovo", isRefurbished: false },
-  { id: "2", model: "ThinkPad L380 Yoga", co2: 298.00, year: 2018, manufacturer: "Lenovo", isRefurbished: false },
-  { id: "3", model: "ThinkPad L440", co2: 278.00, year: 2013, manufacturer: "Lenovo", isRefurbished: false },
-  { id: "4", model: "ThinkPad T450", co2: 457.00, year: 2015, manufacturer: "Lenovo", isRefurbished: false },
-  { id: "5", model: "ThinkPad X1 Carbon 5th Gen", co2: 279.00, year: 2017, manufacturer: "Lenovo", isRefurbished: false },
-  { id: "6", model: "MacBook Air (M1, 2020)", co2: 160.00, year: 2020, manufacturer: "Apple", isRefurbished: false },
-  { id: "7", model: "Dell XPS 13 (9310)", co2: 296.00, year: 2020, manufacturer: "Dell", isRefurbished: false },
-  { id: "8", model: "HP Spectre x360 14", co2: 309.00, year: 2021, manufacturer: "HP", isRefurbished: false },
-  { id: "9", model: "ThinkPad T450", co2: 91.40, year: 2015, manufacturer: "Lenovo", isRefurbished: true },
-  { id: "10", model: "MacBook Air 2019", co2: 56.00, year: 2019, manufacturer: "Apple", isRefurbished: true },
-  { id: "11", model: "Dell Latitude 7400", co2: 88.80, year: 2019, manufacturer: "Dell", isRefurbished: true },
-];
 
 export default function LaptopCalculator() {
   const [searchTerm, setSearchTerm] = useState<string>('');
